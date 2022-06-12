@@ -5,9 +5,7 @@ import routes from "./routes/products.js"
 const app = express();
 const PORT = process.env.PORT || 3000
 
-app.use(cors({
-    origin: 'http://localhost:3000',
-}));
+app.use(cors());
 
 //Settings
 app.set(PORT);
